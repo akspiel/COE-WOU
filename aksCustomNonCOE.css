@@ -1,0 +1,20 @@
+/* also linking to ALL COE stylesheet */
+/*************************
+    MAIN MENU CHANGES
+*************************/
+#intHeader {
+  margin-top: 0 !important;
+}
+#intHeader a {
+  background-color: transparent;
+}
+#intHeader nav.ubermenu-loc-mega-menu.ubermenu-main {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+#intHeader nav.ubermenu-loc-mega-menu.ubermenu-main > ul {
+  margin: 0 auto !important;
+  width: calc(-10vw + 100%);
+  max-width: 1400px;
+  float: none;
+}

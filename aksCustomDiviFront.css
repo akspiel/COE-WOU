@@ -1,0 +1,31 @@
+/*************************
+     DIVI FRONTEND BUILDER STYLES -- has to be loaded in head on frontend
+*************************/
+button.et-fb-button div {
+    color: #fff !important;
+}
+a.et-core-modal-action {
+  background-color: #008bda !important;
+  text-align: center !important;
+}
+.et-db #et-boc .et-l .et-fb-modal--footer-buttons .et-fb-modal__content {
+	height: calc(100% - 95px) !important;
+	max-height: 100% !important;
+}
+.et-db #et-boc .et-l .et-fb-modal {
+    top: 40px !important;
+    bottom: 40px !important;
+}
+button.et-fb-button :hover {
+  background-color: transparent !important;
+}
+/* media picker */
+.media-modal-content .media-toolbar .media-toolbar-secondary {
+  margin-top: 32px;
+}
+.media-modal-content button.button.media-button.button-primary {
+  color: #fff !important;
+}
+button.media-modal-close :hover {
+  background-color: transparent !important;
+}

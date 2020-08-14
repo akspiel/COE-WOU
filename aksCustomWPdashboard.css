@@ -1,0 +1,12 @@
+/*************************
+     WP DASHBOARD -- has to be loaded in admin view
+*************************/
+.media-modal-content .media-frame select.attachment-filters {
+  margin-top: 12px;
+}
+.media-toolbar-secondary select:first-of-type {
+clear: both;
+}
+.media-modal .wpmf-attachments-wrapper {
+  top: 220px;
+}
