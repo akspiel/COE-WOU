@@ -1,0 +1,1563 @@
+/* linked on COE, DEL, DSPS HEXS, AI sites as of 8/11/20 */
+/*************************
+     Display Classes
+*************************/
+.display-flex,
+.et-db #et-boc .et-l .et_pb_row.et_pb_equal_columns,
+.et-db #et-boc .et-l .et_pb_row_inner.et_pb_equal_columns {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.display-grid {
+  display: grid;
+  display: -ms-grid;
+}
+/* --- less than 767 --- */
+@media screen and (max-width: 767px) {
+	.display-flex,
+	.et-db #et-boc .et-l .et_pb_row.et_pb_equal_columns,
+	.et-db #et-boc .et-l .et_pb_row_inner.et_pb_equal_columns {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+  } 
+}
+/*************************
+     can be GLOBAL HEADER & NAVIGATION FIXES
+*************************/
+#globalHeader {
+	margin: 0 !important;
+}
+#globalHeader,
+#globalHeader .row {
+	min-height: 60px !important;
+}
+#globalHeader #topRow #topLogoDiv {
+	padding-left: 0;
+	padding-top: 6px;
+}
+#globalHeader #topRow #topLogoDiv a img {
+	width: 176px !important;
+}
+#globalHeader #topRow #topNav,
+#globalHeader #topRow #topNav ul li {
+	margin: 0;
+}
+#globalHeader #topRow #topNav ul li a {
+	padding: 19px 10px;
+	display: inline-block;
+}
+#globalHeader #topRow #topNav #menu-top-navigation {
+	width: auto !important;
+	padding: 0;
+}
+#globalHeader #topRow #topNav #menu-top-navigation #et_top_search {
+	position: relative;
+	right: -10px;
+}
+#globalHeader #topRow #topNav #menu-top-navigation #et_search_icon {
+  padding: 4px;
+}
+/* --- less than 991 --- */
+@media screen and (max-width: 991px) {
+	#body #content #intHeader {
+    display: none;
+	}
+	#globalHeader .ubermenu-submenu-type-mega {
+		background-image: none !important;
+		position: relative !important;
+		padding: 0 !important;
+		top: 0 !important;
+	}
+	.ubermenu .ubermenu-submenu .ubermenu-column-auto {
+		width: 100% !important;
+	}
+	.ubermenu .ubermenu-submenu .ubermenu-column-auto a {
+		font-weight: normal !important;
+		padding-left: 40px;
+	}  
+	.searchOnMobile {
+		right: 50px !important;
+	}
+}
+/* --- less than 767 --- */
+@media screen and (max-width: 767px) {
+	#globalHeader a.ubermenu-responsive-toggle {
+		right: 0;
+	}  
+	#globalHeader a.ubermenu-responsive-toggle > .fa.fa-bars {
+		margin-right: -5px;
+	}
+}
+/*************************
+     GLOBAL FOOTER FIXES
+*************************/
+/* accessibility icon and menu */
+.et-db #content ul.wou-menu-visible li {
+	text-transform: none;
+}
+.mon-logo-image-content {
+	line-height: 0;
+	height: 48px;
+}
+.mon-logo-image-content .mon-logo-image {
+	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1997267/universal-access.svg);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin: 0 !important;
+	width: 48px !important;
+	height: 48px;
+	border: none !important;
+}
+.mon-logo-image-content .mon-logo-image img {
+  margin: 0;
+  opacity: 0;
+}
+mon-pa-dashboard button.mon-btn-default {
+  width: 50px;
+  height: 50px;
+  padding-top: 6px;
+}
+.mon-bar-container button.mon-btn-default:hover {
+  background-color: #db0a29;
+}
+.mon-bar-container button.mon-btn-default img { 
+	transition: all .2s;
+}
+.mon-bar-container button.mon-btn-default:hover img {
+	filter: invert(1);
+	background-color: transparent;
+}
+/* WOU footer */
+#fixedfooter {
+	box-shadow: 0 0 7px rgba(0, 0, 0, 0.35);
+}
+#fixedfooter a {
+	transition: all .2s;
+}
+#fixedfooter .rightfooter ul,
+#fixedfooter .leftfooter ul {
+	padding: 0;
+	height: 50px;
+	min-height: 0;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#fixedfooter .leftfooter ul li,
+#fixedfooter .rightfooter ul li {
+	line-height: 15px;
+}
+#fixedfooter ul.menu > li:first-child {
+	padding-left: 0 !important;
+}
+#fixedfooter ul.menu > li:last-child {
+	padding-right: 0 !important;
+}
+/* right side of fixed footer */
+#fixedfooter .rightfooter img {
+  position: relative;
+  top: -3px;
+}
+/* social icons */
+#fixedfooter .rightfooter ul li#menu-item-251 a:nth-child(n + 2) img {
+	display: none;
+}
+#fixedfooter .rightfooter ul li#menu-item-251 a:nth-child(n + 2) {
+	font-size: 16px;
+  font-weight: normal;
+  padding: 0 2px;
+  line-height: 0;
+  position: relative;
+  top: 1px;
+}
+#fixedfooter .rightfooter ul li#menu-item-251 a:nth-child(n + 2)::before {
+	font-family: FontAwesome;
+}
+/* facebook */
+#fixedfooter .rightfooter ul li#menu-item-251 a:nth-child(2) {
+	padding-left: 0;
+}
+#fixedfooter .rightfooter ul li#menu-item-251 a:nth-child(2)::before {
+	content: "\f09a";
+}
+/* instagram */
+#fixedfooter .rightfooter ul li#menu-item-251 a:nth-child(3) {
+	font-size: 18.5px;
+}
+#fixedfooter .rightfooter ul li#menu-item-251 a:nth-child(3)::before {
+	content: "\f16d";
+}
+/* twitter */
+#fixedfooter .rightfooter ul li#menu-item-251 a:nth-child(4) {
+	font-size: 19px;
+}
+#fixedfooter .rightfooter ul li#menu-item-251 a:nth-child(4)::before {
+	content: "\f099";
+}
+/* youtube */
+#fixedfooter .rightfooter ul li#menu-item-251 a:nth-child(5) {
+	font-size: 20px;
+	padding-right: 0;
+}
+#fixedfooter .rightfooter ul li#menu-item-251 a:nth-child(5)::before {
+	content: "\f16a";
+}
+/* left side of fixed footer */
+#fixedfooter .leftfooter img {
+  position: relative;
+  top: -5px;
+}
+/* portal icon */
+#fixedfooter .leftfooter ul li.menu-item-243 {
+	border-right: none;
+	position: relative;
+	top: 2px;
+}
+/* current students text */
+#fixedfooter .leftfooter ul li.menu-item-244 {
+	border-left: 1px solid #000;
+}
+/* --- less than 1099 --- */
+@media screen and (max-width: 1099px) {
+  #fixedfooter a {
+		font-size: 13px;
+	}
+}
+/* --- less than 991 --- */
+@media screen and (max-width: 991px) {
+	body.monsido-toolbar-body-container>.mon-logo-container {
+    padding: 0;
+	}
+}
+@media screen and (max-width: 767px) {
+	#globalFooter {
+		padding: 8px 20px 0px 20px;
+	}
+	#globalFooter .liteSocial br.visible-xs-inline {
+		display: none !important;
+	}
+	#globalFooter .liteSocial > a:nth-child(1) {
+		margin-left: -15px;
+	}
+}
+/*************************
+     BREADCRUMBS
+*************************/
+div.aks-crumbs {
+	margin-bottom: 5vw;
+    width: calc(-10vw + 100%);
+	margin-left: auto;
+  margin-right: auto;
+}
+div.aks-crumbs + div.aks-crumbs {
+  display: none !important;
+}
+div.aks-crumbs ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 15px !important;
+  color: #333;
+}
+div.aks-crumbs ol li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+div.aks-crumbs ol li a {
+  transition: all .2s !important;
+  color: #333;
+  text-decoration: none;
+}
+div.aks-crumbs ol li a:hover,
+div.aks-crumbs ol li a:focus {
+  color: #be0a29 !important;
+  text-decoration: underline !important;
+}
+div.aks-crumbs ol li:not(:last-child)::after {
+  content: "›";
+  padding: 0 5px;
+  font-size: 1.5em;
+  position: relative;
+  top: 1px;
+  left: -2px;
+}
+div.aks-crumbs ol li:last-child {
+  font-weight: 600;
+}
+/* hide unaccessible crumbs */
+body #intHeader p.crumbs {
+  display: none;
+}
+@media screen and (max-width: 676px) {
+  nav.aks-crumbs {
+    display: none;
+  }
+}
+/*************************
+    GLOBAL IMAGES AND CAPTIONS
+*************************/
+#heroImage {
+    border: none !important;
+	/* margin-bottom: 0 !important; */
+}
+img {
+	vertical-align: middle !important;
+}
+figure figcaption {
+    display: block;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+/* divi lightbox */
+a.et_pb_lightbox_image:focus {
+  outline: 5px auto -webkit-focus-ring-color !important;
+  outline-offset: 1px;
+}
+/* --- less than 767 --- */
+@media screen and (max-width: 767px) {
+	figure figcaption {
+		padding: 10px 5vw 0 5vw;
+	}
+}
+/*************************
+    GLOBAL TEXT
+*************************/
+.et-db #et-boc .et_pb_module {
+  font-size: 1.8rem;
+}
+.et-db #et-boc .et_pb_module p,
+.et-db #et-boc .et_pb_module ul,
+.et-db #et-boc .et_pb_module ol,
+#mainContent p,
+#mainContent ul,
+#mainContent ol {
+  font-size: inherit;
+  line-height: 1.7;
+  color: #333;
+}
+/* LISTS */
+.et-db #et-boc .et-l .et_pb_text ul,
+.et-db #et-boc .et-l .et_pb_text ol {
+  padding-bottom: 0;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.et-db #et-boc .et-l .et_pb_text p:not(:last-of-type) + ul,
+.et-db #et-boc .et-l .et_pb_text p:not(:last-of-type) + ol {
+  margin-top: 0;
+}
+.et-db #et-boc .et-l .et_pb_text li:not(:last-child) {
+  margin-bottom: 5px;
+}
+.et-db #et-boc .et-l .et_pb_text ul > li {
+  list-style: disc;
+}
+.et-db #et-boc .et-l .et_pb_text li ul > li {
+  list-style: circle;
+}
+/* LINKS */
+.et-db #et-boc .et_pb_module.et_pb_text:not(.aks-banner-people) p a,
+.et-db #et-boc .et_pb_module.et_pb_text:not(.aks-banner-people) li a,
+.et-db #et-boc .et_pb_module.et_pb_toggle .et_pb_toggle_content:not(.aks-banner-people) p a,
+.et-db #et-boc .et_pb_module.et_pb_toggle .et_pb_toggle_content:not(.aks-banner-people) li a {
+  text-decoration: underline !important;
+  transition: .2s all !important;
+}
+.et-db #et-boc .et_pb_module.et_pb_text:not(.aks-banner-people) p a:hover,
+.et-db #et-boc .et_pb_module.et_pb_text:not(.aks-banner-people) p a:focus,
+.et-db #et-boc .et_pb_module.et_pb_text:not(.aks-banner-people) li a:hover,
+.et-db #et-boc .et_pb_module.et_pb_text:not(.aks-banner-people) li a:focus,
+.et-db #et-boc .et_pb_module.et_pb_toggle .et_pb_toggle_content:not(.aks-banner-people) p a:hover,
+.et-db #et-boc .et_pb_module.et_pb_toggle .et_pb_toggle_content:not(.aks-banner-people) p a:focus,
+.et-db #et-boc .et_pb_module.et_pb_toggle .et_pb_toggle_content:not(.aks-banner-people) li a:hover,
+.et-db #et-boc .et_pb_module.et_pb_toggle .et_pb_toggle_content:not(.aks-banner-people) li a:focus {
+  color: #9f1d24 !important;
+}
+/* HEADINGS */
+#pageHeader,
+#pageHeader.wou-menu-visible,
+#et-boc .et-l div #pageHeader {
+  padding: 6vh 0 6vh 0 !important;
+  background-color: #be0a29;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2vw;
+}
+#pageHeader h1,
+.et-db #et-boc .et-l #pageHeader h1 {
+  padding: 0;
+  padding-right: 18%;
+  text-transform: none;
+  font-size: 5rem;
+  line-height: 1.3;
+  color: #fff;
+  position: relative;
+  z-index: 5;
+}
+#pageHeader::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 30vw 20vw 0;
+  border-color: transparent #db0a29 transparent transparent;
+  top: 0;
+  right: 0;
+}
+#pageHeader::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 8vw 30vw;
+  border-color: transparent transparent #a1252c transparent;
+  bottom: 0;
+  right: 0;
+  opacity: .6;
+}
+.et-db #et-boc .et_pb_module:not(.et_pb_posts):not(.et_pb_blog_grid_wrapper) h2,
+.et-db #et-boc .et-l .et_pb_module:not(.et_pb_posts):not(.et_pb_blog_grid_wrapper) h2 {
+  padding: 0;
+  margin: 4rem 0 0.75rem 0;
+  font-size: 4rem;
+  line-height: 1.3;
+}
+.et-db #et-boc .et_pb_module h3,
+.et-db #et-boc .et-l .et_pb_module h3 {
+  padding: 0;
+  margin: 2.8rem 0 1rem 0;
+  color: #575759;
+  font-size: 2.5rem;
+  line-height: 1.3;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+.et-db #et-boc .et_pb_module h4,
+.et-db #et-boc .et-l .et_pb_module h4 {
+  margin: 2rem 0 0.75rem 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.3;
+  font-weight: 300;
+  font-size: 2.25rem;
+}
+.et-db #et-boc .et_pb_module h5,
+.et-db #et-boc .et-l .et_pb_module h5 {
+  margin: 2rem 0 0.75rem 0;
+  text-transform: uppercase;
+  padding: 0;
+  font-size: 1.4rem;
+  line-height: 1.3;
+  font-weight: 600;
+  color: #333;
+}
+/* --- less than 767 --- */
+@media screen and (max-width: 767px) {
+  #pageHeader h1,
+	.et-db #et-boc .et-l #pageHeader h1 {
+		padding: 0;
+    font-size: 5.5rem;
+		font-weight: bold;
+	}
+	#pageHeader,
+	#pageHeader.wou-menu-visible,
+	#et-boc .et-l div #pageHeader {
+		margin-bottom: 17.75vw;
+  }
+	.et-db #et-boc .et_pb_module:not(.et_pb_posts):not(.et_pb_blog_grid_wrapper) h2,
+	.et-db #et-boc .et-l .et_pb_module:not(.et_pb_posts):not(.et_pb_blog_grid_wrapper) h2 {
+		font-size: 3.5rem;
+	} 
+}
+/*************************
+    FACULTY AND STAFF BANNER PROFILES in Amy's designs
+*************************/
+.et-db #et-boc .et-l .aks-banner-people {
+  max-width: 850px;
+  margin: 0 auto;
+}
+.et-db #et-boc .et-l .aks-banner-people .col-md-auto,
+.et-db #et-boc .et-l .aks-banner-people .et_pb_text_inner > section + p,
+.et-db #et-boc .et-l .aks-banner-people .et_pb_text_inner > section + br {
+	display: none !important;
+}
+.et-db #et-boc .et-l .aks-banner-people section > .container-fixed.content {
+	margin: 0 !important;
+	padding: 0 !important;
+	width: 100%;
+}
+.et-db #et-boc .et-l .aks-banner-people section > .container-fixed.content .row .col-md-6 .profilebox {
+  position: relative;
+}
+.et-db #et-boc .et-l .aks-banner-people section > .container-fixed.content .row .col-md-6 .profilebox a {
+  transition: .2s all;
+}
+.et-db #et-boc .et-l .aks-banner-people section > .container-fixed.content .row .col-md-6 .profilebox a:hover,
+.et-db #et-boc .et-l .aks-banner-people section > .container-fixed.content .row .col-md-6 .profilebox a:focus {
+  color: #9f1d24 !important;
+  text-decoration: underline !important;
+}
+/* horizontal banner people layout */
+.et-db #et-boc .et-l .aks-banner-people.aks-banner-people-horizontal section > .container-fixed.content .row .col-md-6 {
+  width: 100%;
+  float: none;
+  border-bottom: 1px solid #c4c6c8;
+  margin-bottom: 0;
+}
+.et-db #et-boc .et-l .aks-banner-people.aks-banner-people-horizontal section > .container-fixed.content .row .col-md-6 .profilebox {
+  padding: 2.25vw 2.25vw 2.25vw 150px !important;
+}
+.et-db #et-boc .et-l .aks-banner-people.aks-banner-people-horizontal section > .container-fixed.content .row .col-md-6 .profilebox img {
+  position: absolute;
+  left: 0;
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  top: calc(50% - 65px);
+  object-fit: cover;
+}
+.et-db #et-boc .et-l .aks-banner-people.aks-banner-people-horizontal section > .container-fixed.content .row .col-md-6 .profilebox h3.profileheader {
+  margin-top: 0;
+}
+.et-db #et-boc .et-l .aks-banner-people.aks-banner-people-horizontal section > .container-fixed.content .row .col-md-6 .profilebox p {
+  margin-bottom: 0;
+}
+/* --- less than 991 --- */
+@media screen and (max-width: 991px) {
+	.et-db #et-boc .et-l .aks-banner-people.aks-banner-people-horizontal section > .container-fixed.content .row .col-md-6 .profilebox {
+		padding: 5vw 0 5vw 150px !important;
+	}  
+}
+/* --- less than 767 --- */
+@media screen and (max-width: 767px) {
+  .et-db #et-boc .et-l .aks-banner-people.aks-banner-people-horizontal section > .container-fixed.content .row .col-md-6 .profilebox {
+    padding: 5vw 0 5vw 0 !important;
+	}
+  .et-db #et-boc .et-l .aks-banner-people.aks-banner-people-horizontal section > .container-fixed.content .row .col-md-6 .profilebox img {
+    position: relative;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    top: 0;
+  } 
+}
+/*************************
+     DIVI SECTIONS in Amy's designs
+*************************/
+/* adding clearfix to outer divi container */
+.et_builder_inner_content::before {
+  content: " ";  
+  display: table;
+}
+.et_builder_inner_content::after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-section,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section {
+	margin-top: 0;
+	margin-bottom: 7.75vw;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+/* on home layouts */
+.et-db.page-template-homepage-page #et-boc .et-l .et_pb_section.et_pb_section_0.aks-section:not(.aks-sidebar):not(.aks-full-width) {
+  margin-top: 5vw;
+}
+/* sizing of sections on pages w/ amy's sidebar */
+/* the sidebar */
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar {
+  width: 315px;
+  float: right;
+  margin-right: -5vw;
+}
+/* all other sections on pages w/ sidebar */
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar ~ .et_pb_section {
+  width: calc(100% - 315px);
+  margin-right: 5vw;
+  float: left;
+}
+/* first divi section on page */
+.et-db #et-boc .et-l .et_builder_inner_content > .et_pb_section.aks-section:first-child,
+.et-db #et-boc .et-l .et-fb-post-content > .et_pb_section.aks-section:first-child,
+.et-db #et-boc .et-l .et_builder_inner_content > .et_pb_section.aks-section ~ .et_pb_section:first-child,
+.et-db #et-boc .et-l .et-fb-post-content > .et_pb_section.aks-section ~ .et_pb_section:first-child {
+	margin-top: 0;
+}
+/* greater than 1100 */
+@media screen and (min-width: 1100px) {
+  #et-boc .et-l .et_builder_inner_content > .et_pb_section.aks-section ~ .et_pb_section.et_pb_fullwidth_section:last-child {
+    margin-bottom: 0;
+  }
+}
+/* --- greater than 1560 --- */
+@media screen and (min-width: 1560px) {
+	.et-db #et-boc .et-l .et_pb_section.aks-sidebar {
+		margin-right: calc(-50vw + 708px);
+		width: calc(21% + 50vw - 708px);
+	}	
+	.et-db #et-boc .et-l .et_pb_section.aks-sidebar ~ .et_pb_section {
+		width: calc(79% - 5vw);
+	}
+  /* red line */
+  .et-db #et-boc .et-l .et_pb_section .aks-red-line {
+    margin-left: calc(-45vw + 708px) !important;
+    width: calc(45vw - 730px);
+    position: absolute;
+    top: 15px;
+  }
+}
+/* --- greater than 1800 --- */
+@media screen and (min-width: 1800px) {
+	.et-db #et-boc .et-l .et_pb_section.aks-sidebar {
+		width: calc(15% + 50vw - 708px);
+	}	
+	.et-db #et-boc .et-l .et_pb_section.aks-sidebar ~ .et_pb_section {
+		width: calc(85% - 5vw);
+	}
+}
+/* --- less than 1099 --- */
+@media screen and (max-width: 1099px) {
+    .et-db #et-boc .et-l .et_pb_section.aks-section,
+	.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section {
+        margin-bottom: 12.5vw;
+	}
+	.et-db #et-boc .et-l .et_pb_section.aks-sidebar,
+	.et-db #et-boc .et-l .et_pb_section.aks-sidebar ~ .et_pb_section {
+		width: 100%;
+		margin-right: 0;
+	}	
+  /* on outer divi content with class added via JS */
+	body.aks-layout-sidebar .et_builder_inner_content {
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+        -webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+	.et-db #et-boc .et-l .et_pb_section.aks-sidebar {
+		-webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+    }
+}
+/* --- less than 767 --- */
+@media screen and (max-width: 767px) {
+    .et-db #et-boc .et-l .et_pb_section.aks-section,
+	.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section {
+        margin-bottom: 17.75vw;
+	}
+	.et-db #et-boc .et-l .et_pb_section.aks-sidebar {
+		margin-top: 10vw;
+	} 
+}
+/*************************
+     DIVI ROWS in Amy's designs
+*************************/
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row_inner,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row_inner {
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-top: 0;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row:not(:last-of-type),
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row_inner:not(:last-of-type),
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row:not(:last-of-type),
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row_inner:not(:last-of-type),
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module:not(.et_pb_toggle):not(:last-child),
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module:not(.et_pb_toggle):not(:last-child) {
+	margin-bottom: 2.25vw;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row:last-of-type,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row_inner:last-of-type,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row>.et_pb_column .et_pb_module:last-child,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row_inner>.et_pb_column .et_pb_module:last-child,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row:last-of-type,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row_inner:last-of-type,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row>.et_pb_column .et_pb_module:last-child,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row_inner>.et_pb_column .et_pb_module:last-child {
+	margin-bottom: 0;
+}
+/*************************
+     DIVI SIDEBAR SECTION MODULES in Amy's designs
+*************************/
+/* padding for colored sidebar row */
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_row.aks-row-with-background {
+	padding-top: 2.25vw;
+    padding-right: 5vw;	
+    padding-bottom: 2.25vw;
+	padding-left: 2.25vw;
+}
+/* program name */
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_row.aks-row-with-background .et_pb_module.et_pb_text:first-of-type p {
+	line-height: 1.5;
+}
+/* button in sidebar */
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_button_module_wrapper a.et_pb_button {
+  padding-top: .8vw !important;
+  padding-bottom: .8vw !important;
+  padding-left: .9vw !important;
+  padding-right: .9vw !important;
+  font-size: 15px !important;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_button_module_wrapper a.et_pb_button::after {
+  opacity: 0 !important;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_button_module_wrapper {
+  padding-top: 2rem;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_team_member ~ .et_pb_module.et_pb_button_module_wrapper {
+	margin-top: -2.25vw;
+}
+/* social */
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_social_media_follow li.et_pb_social_icon a {
+  margin-right: 10px;
+  position: relative;
+  transition: .3s all;
+  top: 0;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_social_media_follow li.et_pb_social_icon a:hover, 
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_social_media_follow li.et_pb_social_icon a:focus {
+  top: -5px;
+}
+/* social after button */
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_button_module_wrapper + .et_pb_module.et_pb_social_media_follow {
+  padding-top: 1vw;
+}
+/* contact person */
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_team_member .et_pb_team_member_description p.et_pb_member_position {
+	font-style: italic;
+	padding-bottom: 1em;
+    line-height: 1.5;
+	font-size: 1.6rem;
+}
+/* --- greater than 1560 --- */
+@media screen and (min-width: 1560px) {
+	.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_button_module_wrapper a.et_pb_button {
+		font-size: 18px !important;
+        padding-left: 1.5vw !important;
+		padding-right: 1.5vw !important;
+      	width: auto !important;
+	}
+}
+/* --- less than 1559 and more than 1100 --- */
+@media screen and (max-width: 1559px) and (min-width: 1100px) {
+	.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_team_member .et_pb_team_member_description > div > p strong {
+		display: block;
+	}
+	.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_team_member .et_pb_team_member_description > div > p:nth-child(1) > br:first-of-type,
+	.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_team_member .et_pb_team_member_description > div > p:nth-child(2) > br:first-of-type {
+		display: none;
+	}
+	.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_team_member .et_pb_team_member_description > div > p:not(:last-child) {
+		margin-bottom: .5em;
+	}	
+}
+/* --- less than 1099 --- */
+@media screen and (max-width: 1099px) {
+	.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_row.aks-row-with-background {
+		padding-top: 5vw;
+		padding-right: 5vw;
+		padding-bottom: 5vw;
+		padding-left: 5vw;
+	}
+ 	.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_button_module_wrapper a.et_pb_button {
+		font-size: 18px !important;
+        padding-left: 3vw !important;
+		padding-right: 3vw !important;
+        padding-top: 1.75vw !important;
+		padding-bottom: 1.75vw !important;
+      	width: auto !important;
+	} 
+	.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_team_member {
+		margin-top: 5vw !important;
+	}
+    .et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_social_media_follow {
+		padding-top: 4vw;
+	}
+	.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_button_module_wrapper + .et_pb_module.et_pb_social_media_follow {
+		padding-top: 5vw;
+	}
+}
+/* --- less than 767 --- */
+@media screen and (max-width: 767px) {
+	.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_team_member {
+		padding-top: 5vw;
+	}
+	.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_button_module_wrapper {
+		margin-bottom: 0;
+		padding-bottom: 5vw;
+	}  
+	.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_social_media_follow {
+		padding-top: 7.5vw;
+	}
+    .et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_row.aks-row-with-background {
+		padding-top: 5vw;
+		padding-right: 5vw;
+		padding-bottom: 5vw;
+		padding-left: 5vw;
+    }
+	.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_row.aks-row-with-background .et_pb_module:last-of-type {
+		margin-bottom: 0 !important;
+    }
+   	.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_button_module_wrapper a.et_pb_button {
+        padding-left: 5vw !important;
+		padding-right: 5vw !important;
+        padding-top: 5vw !important;
+		padding-bottom: 5vw !important;
+      	width: 100% !important;
+      	padding-top: 1rem !important;
+	} 
+      .et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_social_media_follow {
+		padding-top: 9vw;
+	}
+	.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_button_module_wrapper + .et_pb_module.et_pb_social_media_follow {
+		padding-top: 10vw;
+	}
+}
+/*************************
+   DIVI MENU IN SIDEBAR SECTION in Amy's designs
+*************************/
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_menu .et_pb_menu__menu {
+  display: block !important;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_menu .et_mobile_nav_menu {
+  display: none !important;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_menu .et_pb_menu__wrap,
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_menu .et_pb_menu__menu,
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_menu nav.et-menu-nav,
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_menu .et_pb_menu__menu > nav > ul > li,
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_menu ul.sub-menu,
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_menu ul.et-menu li li,
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_menu ul.et-menu li li a {
+  width: 100% !important;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_menu nav.et-menu-nav,
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_menu ul.et-menu > li {
+  padding: 0 !important;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_menu ul.et-menu {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 !important;
+}
+/* top-level items */
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_menu li.menu-item-has-children > a:first-child:after {
+  display: none!important;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_menu ul.et-menu > li > a {
+  text-transform: uppercase!important;
+  font-weight: bold!important;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_menu ul.et-menu li.menu-item {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0!important;
+  border-bottom: 2px solid #fff !important;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_menu ul.et-menu li.menu-item:last-child {
+  border-bottom: none !important;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_menu ul.et-menu li a {
+	padding: 1.1vw 5vw 1.1vw 2.25vw !important;
+}
+/* submenu */
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_menu .et-menu.nav ul.sub-menu {
+  visibility: visible !important;
+  position: relative !important;
+  left: 0 !important;
+  top: 0 !important;
+  opacity: 1 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  border-top: 2px solid #fff !important;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_menu ul.sub-menu li {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_menu ul.sub-menu li a {
+  padding-left: 4vw !important;
+}
+/* only show the submenu for the current menu pages */
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_menu ul.et-menu > li:not(.current-menu-ancestor):not(.current-menu-item) ul.sub-menu {
+	display: none;
+}
+/* hovering and active */
+.et-db #et-boc .et-l .et-menu a {
+  transition: .3s all !important;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_menu li a:hover,
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_menu li a:focus,
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_menu li.current-menu-item > a {
+	color: #db0a29 !important;
+	opacity: 1 !important;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_menu li a:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_menu li a:hover,
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_menu li a:focus {
+  background-color: transparent;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_menu li.current-menu-item > a {
+	font-weight: 600 !important;
+	background-color: rgba(0,0,0,.05);
+}
+/* --- less than 1099 --- */
+@media screen and (max-width: 1099px) {
+  .et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_menu ul.et-menu li a {
+		padding: 2vw 5vw 2vw 5vw !important;
+  }
+}
+/* --- less than 767 --- */
+@media screen and (max-width: 767px) {
+  .et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_menu ul.et-menu li a {
+		padding: 5vw 5vw 5vw 5vw !important;
+  }
+}
+/*************************
+     DIVI SECTIONS WITH BACKGROUNDS (full-width or pulled left) in Amy's designs
+*************************/
+.et-db #et-boc .et-l .et_pb_section.aks-section:not(.aks-sidebar) .et_pb_with_background,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section.et_pb_with_background {
+	padding-top: 5vw;
+	padding-bottom: 5vw;
+}
+/* on pages w/ sidebar */
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar ~ .et_pb_section.et_pb_with_background {
+	margin-left: -5vw;
+	width: calc(100% - 315px + 5vw);
+	padding-right: 2.25vw;
+	padding-left:	5vw;
+}
+/* row inside sections */
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_with_background .et_pb_row,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section.et_pb_with_background .et_pb_row {
+	width: 100%;
+}
+/* --- greater than 1560 --- */
+@media screen and (min-width: 1560px) {
+	/* on pages w/ sidebar */
+	.et-db #et-boc .et-l .et_pb_section.aks-sidebar ~ .et_pb_section.et_pb_with_background {
+		margin-left: calc(-50vw + 708px); 
+		padding-left: calc(50vw - 708px);
+		width: calc(79% - 5vw + 50vw - 708px)
+	}
+}
+/* --- greater than 1800 --- */
+@media screen and (min-width: 1800px) {
+	/* on pages w/ sidebar */
+	.et-db #et-boc .et-l .et_pb_section.aks-sidebar ~ .et_pb_section.et_pb_with_background {
+	width: calc(85% - 5vw + 50vw - 708px); 
+	}	
+}
+/* --- less than 1099 --- */
+@media screen and (max-width: 1099px) {
+    .et-db #et-boc .et-l .et_pb_section.aks-section.et_pb_with_background,
+    .et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section.et_pb_with_background,
+	.et-db #et-boc .et-l .et_pb_section.aks-sidebar ~ .et_pb_section.et_pb_with_background {
+		margin-left: -5vw;
+		margin-right: -5vw;
+		padding-left: 5vw;
+		padding-right: 5vw;
+        width: auto;
+	}
+}
+/* less than 767px */
+@media screen and (max-width: 767px) {
+  .et-db #et-boc .et-l .et_pb_section.aks-section:not(.aks-sidebar) .et_pb_with_background,
+  .et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section.et_pb_with_background {
+      padding-top: 17.5vw;
+      padding-bottom: 17.5vw;
+  }  
+  /*
+	.et-db #et-boc .et-l .et_pb_section.aks-sidebar ~ .et_pb_section.et_pb_with_background {
+		padding-top: 17.5vw;
+		padding-right: 10vw;
+		padding-bottom: 17.5vw;
+		padding-left:	10vw;
+	}
+  */
+}
+/*************************
+     DIVI COLUMNS in Amy's designs
+*************************/
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_column,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_column {
+	margin-right: 2.25vw;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row.et_pb_gutters1 .et_pb_column,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row.et_pb_gutters1 .et_pb_column {
+	margin-right: 0;
+}
+/* equal width columns in regular sections */
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row > .et_pb_column_1_2,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row > .et_pb_column_1_2 {
+	width: calc(50% - 1.125vw);
+}
+/* gutters 1 */
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row.et_pb_gutters1 > .et_pb_column_1_2,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row.et_pb_gutters1 > .et_pb_column_1_2 {
+	width: 50%;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row > .et_pb_column_1_3,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row > .et_pb_column_1_3 {
+	width: calc(33.33% - 1.5vw);
+}
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row > .et_pb_column_1_4,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row > .et_pb_column_1_4 {
+	width: calc(25% - 1.6875vw);
+}
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row > .et_pb_column_1_5,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row > .et_pb_column_1_5 {
+	width: calc(20% - 1.8vw);
+}
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row.et_pb_row_6col > .et_pb_column_1_6,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row.et_pb_row_6col > .et_pb_column_1_6 {
+	width: calc(16.66% - 1.875vw);
+}
+/* unequal width columns in regular sections */
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row > .et_pb_column_3_5,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row > .et_pb_column_3_5 {
+	width: calc(60% - 1.125vw);
+}		
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row > .et_pb_column_2_5,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row > .et_pb_column_2_5 {
+	width: calc(40% - 1.125vw);
+}			
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row > .et_pb_column_2_3,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row > .et_pb_column_2_3 {
+	width: calc(66.67% - 1.125vw);
+}
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row > .et_pb_column_1_3 ~ .et_pb_column_2_3,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row > .et_pb_column_1_3 ~ .et_pb_column_2_3 {
+	width: calc(66.67% - .75vw);
+}
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row > .et_pb_column_2_3 ~ .et_pb_column_1_3,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row > .et_pb_column_2_3 ~ .et_pb_column_1_3 {
+	width: calc(33.33% - 1.125vw);
+}
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row.et_pb_row_1-4_3-4 > .et_pb_column_3_4,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row.et_pb_row_3-4_1-4 > .et_pb_column_3_4,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row.et_pb_row_1-4_3-4 > .et_pb_column_3_4,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row.et_pb_row_3-4_1-4 > .et_pb_column_3_4 {
+	width: calc(75% - 1.125vw);
+}
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row.et_pb_row_1-4_3-4 > .et_pb_column_1_4,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row.et_pb_row_3-4_1-4 > .et_pb_column_1_4,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row.et_pb_row_1-4_3-4 > .et_pb_column_1_4,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row.et_pb_row_3-4_1-4 > .et_pb_column_1_4 {
+	width: calc(25% - 1.125vw);
+}
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row_1-4_1-2_1-4 > .et_pb_column_1_2,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row_1-4_1-4_1-2 > .et_pb_column_1_2,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row_1-2_1-4_1-4 > .et_pb_column_1_2,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row_1-4_1-2_1-4 > .et_pb_column_1_2,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row_1-4_1-4_1-2 > .et_pb_column_1_2,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row_1-2_1-4_1-4 > .et_pb_column_1_2 {
+	width: calc(50% - 1.5vw);
+}
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row_1-4_1-2_1-4 > .et_pb_column_1_4,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row_1-4_1-4_1-2 > .et_pb_column_1_4,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row_1-2_1-4_1-4 > .et_pb_column_1_4,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row_1-4_1-2_1-4 > .et_pb_column_1_4,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row_1-4_1-4_1-2 > .et_pb_column_1_4,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row_1-2_1-4_1-4 > .et_pb_column_1_4 {
+	width: calc(25% - 1.5vw);
+}		
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row > .et_pb_column_1_5 ~ .et_pb_column_3_5,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row_1-5_1-5_3-5 > .et_pb_column_3_5,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row_3-5_1-5_1-5 > .et_pb_column_3_5,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row > .et_pb_column_1_5 ~ .et_pb_column_3_5,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row_1-5_1-5_3-5 > .et_pb_column_3_5,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row_3-5_1-5_1-5 > .et_pb_column_3_5 {
+	width: calc(60% - 1.5vw);
+}		
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row.et_pb_row_1-5_1-5_3-5 > .et_pb_column_1_5,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row.et_pb_row_3-5_1-5_1-5 > .et_pb_column_1_5,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row.et_pb_row_1-5_1-5_3-5 > .et_pb_column_1_5,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row.et_pb_row_3-5_1-5_1-5 > .et_pb_column_1_5 {
+	width: calc(20% - 1.5vw);
+}		
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row.et_pb_row_1-6_1-6_1-6_1-2 > .et_pb_column_1_2,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row.et_pb_row_1-2_1-6_1-6_1-6 > .et_pb_column_1_2,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row.et_pb_row_1-6_1-6_1-6_1-2 > .et_pb_column_1_2,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row.et_pb_row_1-2_1-6_1-6_1-6 > .et_pb_column_1_2 {
+	width: calc(50% - 1.6875vw);
+}	
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row.et_pb_row_1-6_1-6_1-6_1-2 > .et_pb_column_1_6,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row.et_pb_row_1-2_1-6_1-6_1-6 > .et_pb_column_1_6,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row.et_pb_row_1-6_1-6_1-6_1-2 > .et_pb_column_1_6,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row.et_pb_row_1-2_1-6_1-6_1-6 > .et_pb_column_1_6 {
+	width: calc(16.66% - 1.6875vw);
+}
+/* in specialty sections */	
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row.et_pb_row_1-2_1-4_1-4 .et_pb_column_1_2 .et_pb_row_inner.et_pb_row_1-4_1-4 > .et_pb_column_inner.et_pb_column_1_4,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row.et_pb_row_3-4_1-4 .et_pb_column_3_4 .et_pb_row_inner > .et_pb_column_inner.et_pb_column_3_8,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row .et_pb_column_1_2 .et_pb_row_inner.et_pb_row_1-4_1-4 > .et_pb_column_inner.et_pb_column_1_4,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row .et_pb_column_2_3 .et_pb_row_inner > .et_pb_column_inner.et_pb_column_1_3,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row.et_pb_row_1-2_1-4_1-4 .et_pb_column_1_2 .et_pb_row_inner.et_pb_row_1-4_1-4 > .et_pb_column_inner.et_pb_column_1_4,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row.et_pb_row_3-4_1-4 .et_pb_column_3_4 .et_pb_row_inner > .et_pb_column_inner.et_pb_column_3_8,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row .et_pb_column_1_2 .et_pb_row_inner.et_pb_row_1-4_1-4 > .et_pb_column_inner.et_pb_column_1_4,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row .et_pb_column_2_3 .et_pb_row_inner > .et_pb_column_inner.et_pb_column_1_3 {
+	width: calc(50% - 1.125vw);
+}
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row.et_pb_row_1-2_1-4_1-4 .et_pb_column_1_2 .et_pb_row_inner.et_pb_row_1-6_1-6_1-6 > .et_pb_column_inner.et_pb_column_1_6,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row.et_pb_row_3-4_1-4 .et_pb_column_3_4 .et_pb_row_inner.et_pb_row_1-4_1-4_1-4 > .et_pb_column_inner.et_pb_column_1_4,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row .et_pb_column_2_3 .et_pb_row_inner > .et_pb_column_inner.et_pb_column_2_9,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row .et_pb_column_1_2 .et_pb_row_inner > .et_pb_column_inner.et_pb_column_2_9,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row .et_pb_column_1_2 .et_pb_row_inner.et_pb_row_1-6_1-6_1-6 > .et_pb_column_inner.et_pb_column_1_6,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row .et_pb_column_2_3 .et_pb_row_inner.et_pb_row_1-6_1-6_1-6 > .et_pb_column_inner.et_pb_column_1_6,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row.et_pb_row_1-2_1-4_1-4 .et_pb_column_1_2 .et_pb_row_inner.et_pb_row_1-6_1-6_1-6 > .et_pb_column_inner.et_pb_column_1_6,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row.et_pb_row_3-4_1-4 .et_pb_column_3_4 .et_pb_row_inner.et_pb_row_1-4_1-4_1-4 > .et_pb_column_inner.et_pb_column_1_4,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row .et_pb_column_2_3 .et_pb_row_inner > .et_pb_column_inner.et_pb_column_2_9,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row .et_pb_column_1_2 .et_pb_row_inner > .et_pb_column_inner.et_pb_column_2_9,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row .et_pb_column_1_2 .et_pb_row_inner.et_pb_row_1-6_1-6_1-6 > .et_pb_column_inner.et_pb_column_1_6,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row .et_pb_column_2_3 .et_pb_row_inner.et_pb_row_1-6_1-6_1-6 > .et_pb_column_inner.et_pb_column_1_6 {
+	width: calc(33.33% - 1.5vw);
+}
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row .et_pb_column_2_3 .et_pb_row_inner.et_pb_row_1-6_1-6_1-6_1-6 > .et_pb_column_inner.et_pb_column_1_6,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row .et_pb_column_2_3 .et_pb_row_inner.et_pb_row_1-6_1-6_1-6_1-6 > .et_pb_column_inner.et_pb_column_1_6 {
+	width: calc(25% - 1.6875vw);
+}
+/* --- less than 991 --- */
+@media screen and (max-width: 991px) {
+	.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_column,
+	.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_column	{
+		margin-bottom: 0px;
+	} 
+}
+/* --- less than 479px --- */
+@media (max-width: 479px) {
+	.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_column.et_pb_column_1_4,
+	.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_column.et_pb_column_1_5,
+	.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_column.et_pb_column_1_6,
+	.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_column.et_pb_column_1_4,
+	.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_column.et_pb_column_1_5,
+	.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_column.et_pb_column_1_6	{
+    margin: 0;
+  }
+}
+/*************************
+    DIVI TEXT MODULES WITH BORDERS in Amy's designs
+*************************/
+/* with border */
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_promo,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_testimonial,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_with_border,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_promo,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_testimonial,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_with_border {
+	padding-top: 2.25vw;
+	padding-right: 2.25vw;
+	padding-bottom: 2.25vw;
+	padding-left: 2.25vw;
+}
+/* making the h2 smaller if in a borderd box */
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_column .et_pb_module.et_pb_with_border h2 {
+  font-size: 3rem;
+}
+/* removing spacing on first */
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_text ul:first-child,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_toggle .et_pb_toggle_content ul:first-child,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_text h2:first-of-type,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_text h3:first-child,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_text h4:first-child,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_blurb .et_pb_blurb_description h3:first-child,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module .et_pb_module_header,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_text ul:first-child,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_toggle .et_pb_toggle_content ul:first-child,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_text h2:first-of-type,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_text h3:first-child,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_text h4:first-child,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_blurb .et_pb_blurb_description h3:first-child,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module .et_pb_module_header {
+  margin-top: 0 !important;
+}
+/* if the h3 is after an image divider */
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_divider_hidden + .et_pb_module.et_pb_text h3:first-child,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_divider_hidden + .et_pb_module.et_pb_text h3:first-child {
+	margin-top: 2.8rem !important;
+}
+/* removing spacing on last */
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_text ul:last-child,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_toggle .et_pb_toggle_content ul:last-child,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_blurb .et_pb_blurb_description ul:last-child
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_text h2:first-of-type,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_text ul:last-child,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_toggle .et_pb_toggle_content ul:last-child,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_blurb .et_pb_blurb_description ul:last-child
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_text h2:first-of-type {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+/* less than 767px */
+@media screen and (max-width: 767px) {
+	.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row .et_pb_module:not(.et_pb_toggle),
+	.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row .et_pb_module:not(.et_pb_toggle) {
+		margin-bottom: 5vw !important;
+	}
+	.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row_inner,
+	.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row,
+	.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row_inner,
+	.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row {
+		margin-bottom: 0 !important;
+	}  
+	.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_text.et_pb_with_border,
+	.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_text.et_pb_with_border,
+  	.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_blurb.et_pb_with_border,
+	.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_blurb.et_pb_with_border {
+		padding-top: 5vw;
+        padding-right: 5vw;
+        padding-bottom: 5vw;
+      	padding-left: 5vw;
+  }
+}
+/*************************
+    DIVI TESTIMONIALS in Amy's designs
+*************************/
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_testimonial .et_pb_testimonial_description,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_testimonial .et_pb_testimonial_description {
+  margin: 0 !important;
+}
+@media screen and (max-width: 767px) {
+	.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_testimonial,
+	.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_testimonial {
+		padding-top: 7.5vw;
+		padding-right: 5vw;
+		padding-bottom: 5vw;
+		padding-left: 5vw;
+  }
+}
+/*************************
+    DIVI CTA aka PROMO in Amy's designs
+*************************/
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_promo p span.aks-sub-note,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_promo p span.aks-sub-note {
+  display: block;
+}
+@media screen and (max-width: 767px) {
+	.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_promo,
+	.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_promo {
+		padding-left: 10vw;
+    	padding-right: 10vw;
+		padding-top: 10vw;
+    	padding-bottom: 10vw;
+  }  
+	.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_promo .et_pb_promo_description div p,
+	.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_promo .et_pb_promo_description div p {
+		font-size: 2.5rem;
+	} 
+  	.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_promo .et_pb_promo_button,
+	.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_promo .et_pb_promo_button {
+		width: 100%;
+	} 
+}
+/*************************
+    DIVI BLURB in Amy's designs
+*************************/
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_blurb .et_pb_main_blurb_image,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_blurb .et_pb_main_blurb_image {
+	height: 100px;
+    margin-bottom: 2.25vw;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_blurb .et_pb_main_blurb_image .et_pb_image_wrap,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_blurb .et_pb_main_blurb_image .et_pb_image_wrap img,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_blurb .et_pb_main_blurb_image .et_pb_image_wrap,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_blurb .et_pb_main_blurb_image .et_pb_image_wrap img {
+	height: 100%;
+}
+@media screen and (max-width: 767px) {
+	.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row_inner > .et_pb_column:not(:last-child) .et_pb_module.et_pb_blurb,
+    .et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_row > .et_pb_column:not(:last-child) .et_pb_module.et_pb_blurb,
+    .et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row_inner > .et_pb_column:not(:last-child) .et_pb_module.et_pb_blurb,
+    .et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_row > .et_pb_column:not(:last-child) .et_pb_module.et_pb_blurb {
+		margin-bottom: 12.5vw !important;
+	}
+	.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_blurb .et_pb_blurb_container .et_pb_blurb_description p,
+	.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_blurb .et_pb_blurb_container .et_pb_blurb_description p {
+		font-size: 2.5rem !important;
+	}
+}
+/*************************
+    DIVI TOGGLE in Amy's designs
+*************************/
+/* the first few are global */
+.et-db #et-boc .et-l .et_pb_section .et_pb_module.et_pb_toggle {
+  padding: 0;
+}
+.et-db #et-boc .et_pb_section .et_pb_module.et_pb_toggle .et_pb_toggle_content {
+  padding: 25px 30px 25px 30px;
+}
+.et-db #et-boc .et-l .et_pb_section .et_pb_module.et_pb_toggle .et_pb_toggle_title {
+	margin: 0 !important;
+	padding: 30px 80px 30px 30px;
+}
+.et-db #et-boc .et-l .et_pb_toggle .et_pb_toggle_title:before {
+  right: 30px;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_toggle .et_pb_toggle_title,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_toggle .et_pb_toggle_title {
+	font-weight: 400 !important;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_toggle.et_pb_toggle_open .et_pb_toggle_title,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_toggle.et_pb_toggle_open .et_pb_toggle_title {
+  font-weight: 600 !important;
+  color: #333;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_toggle.et_pb_toggle_open .et_pb_toggle_title::before,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_toggle.et_pb_toggle_open .et_pb_toggle_title::before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/*************************
+    DIVI TABS in Amy's designs
+*************************/
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_tabs,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_tabs {
+	border: 1px solid #d9d9d9;
+  	border-top: none;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_tabs .et_pb_tab,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_tabs .et_pb_tab {
+	padding: 0 !important;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_tabs .et_pb_tab .et_pb_tab_content,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_tabs .et_pb_tab .et_pb_tab_content {
+	padding-top: 2.25vw;
+	padding-right: 2.25vw;
+	padding-bottom: 2.25vw;
+	padding-left: 2.25vw;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_tabs ul.et_pb_tabs_controls::after,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_tabs ul.et_pb_tabs_controls::after {
+  display: none;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_tabs ul.et_pb_tabs_controls,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_tabs ul.et_pb_tabs_controls {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align-items: stretch;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_tabs ul.et_pb_tabs_controls li,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_tabs ul.et_pb_tabs_controls li {
+  -webkit-flex: 1;  
+  -ms-flex: 1;    
+  flex: 1;
+  border-top: 1px solid #d9d9d9;
+  height: auto !important;
+  display: block;
+  transition: all .2s;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_tabs ul.et_pb_tabs_controls li::before,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_tabs ul.et_pb_tabs_controls li::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 0px;
+  bottom: 0;
+  width: 1px;
+  background-color: #d9d9d9;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_tabs ul.et_pb_tabs_controls li:last-child,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_tabs ul.et_pb_tabs_controls li:last-child {
+  border-right: none;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_tabs ul.et_pb_tabs_controls li a,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_tabs ul.et_pb_tabs_controls li a {
+	background-color: #f4f4f4;
+	transition: all .2s;
+	padding-top: 1.5vw;
+	padding-right: 1vw;
+	padding-bottom: 1.5vw;
+	padding-left: 1vw;
+	text-transform: uppercase;
+    font-size: 1.5rem;
+	font-weight: 700;
+	letter-spacing: .5px;
+	text-align: center;
+    display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+	height: 100%;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_tabs ul.et_pb_tabs_controls li:not(.et_pb_tab_active) a:hover,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_tabs ul.et_pb_tabs_controls li:not(.et_pb_tab_active) a:hover {
+	background-color: #efefef;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_tabs ul.et_pb_tabs_controls li.et_pb_tab_active,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_tabs ul.et_pb_tabs_controls li.et_pb_tab_active {
+  margin-top: -10px;
+  border-top: 5px solid #db0a29;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_tabs ul.et_pb_tabs_controls li.et_pb_tab_active::before,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_tabs ul.et_pb_tabs_controls li.et_pb_tab_active::before {
+  top: -5px;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_tabs ul.et_pb_tabs_controls li.et_pb_tab_active a,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_tabs ul.et_pb_tabs_controls li.et_pb_tab_active a {
+	background-color: #fff;
+	color: #db0a29 !important;
+	padding-top: calc(1.5vw + 6px) !important;
+}
+/*************************
+    DIVI VIDEO SLIDER in Amy's designs
+*************************/
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_video_slider .et_pb_carousel_item:not(.et-pb-active-control) .et_pb_video_overlay_hover,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_video_slider .et_pb_carousel_item:not(.et-pb-active-control) .et_pb_video_overlay_hover {
+	background: rgba(0,0,0,.6) !important;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_video_slider .et_pb_carousel_item.et-pb-active-control .et_pb_video_overlay_hover,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_video_slider .et_pb_carousel_item.et-pb-active-control .et_pb_video_overlay_hover {
+  background: rgba(0,0,0,0) !important;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_video_slider .et_pb_carousel_item:not(.et-pb-active-control) .et_pb_video_overlay_hover:hover,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_video_slider .et_pb_carousel_item:not(.et-pb-active-control) .et_pb_video_overlay_hover:hover {
+  background: rgba(0,0,0,0) !important;
+}
+/*************************
+    GLOBAL DIVI BUTTON
+*************************/
+.et-db #et-boc .et-l .et_pb_button,
+.et-db #et-boc .et-l .et_pb_module .et_pb_button,
+.et-db #et-boc .et-l .et_pb_module a.et_pb_button:not(.wc-forward) {
+	padding: 10px 25px;
+  line-height: 1.5 !important;
+	transition: .3s all !important;
+}
+.et-db #et-boc .et-l .et_pb_button:hover,
+.et-db #et-boc .et-l .et_pb_button:focus,
+.et-db #et-boc .et-l .et_pb_module .et_pb_button:hover,
+.et-db #et-boc .et-l .et_pb_module a.et_pb_button:not(.wc-forward):hover {
+	padding-left: 10px;
+	padding-right: 40px;
+}
+.et-db #et-boc .et-l .et_pb_button:focus {
+	background-color: rgba(0,0,0,.05);
+	border: 2px solid transparent;
+}
+.et-db #et-boc .et-l .et_pb_button:focus::after {
+  opacity: 1;
+  margin-left: 0;
+}
+.et-db #et-boc .et-l .et_pb_button::after,
+.et-db #et-boc .et-l .et_pb_module .et_pb_button::after {
+	line-height: .9em;
+	font-size: 1.75em;
+}
+/* just in Amy's designs */
+.et-db:not(.home) #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_button_module_wrapper a.et_pb_button,
+.et-db:not(.home) #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_button_module_wrapper a.et_pb_button {
+	width: 100%;
+}
+/*************************
+     GLOBAL CONTENT WIDTHS
+*************************/
+body {
+  overflow-x: hidden;
+}
+#body #content.container-fixed {
+	margin: 0 !important;
+	max-width: 100%;
+  padding: 0;
+}
+#body #content .container-fixed #mainContent {
+	padding: 0;
+}
+#wrapper #intHeader {
+  max-width: 100% !important;
+}
+#splashPage {
+  padding-top: 0 !important;
+}
+.et-db #et-boc .et-l .et_pb_row {
+  max-width: none;
+	width: 100%;
+}
+#intHeader nav.ubermenu-loc-mega-menu.ubermenu-main,
+#globalHeader #topRow,
+#pageHeader h1,
+.container-fixed:not(#content),
+.page-template-homepage-page .container-fixed,
+.page-template-homepage-page-2 .container-fixed,
+.project-template-default .et_pb_section:not(.et_pb_fullwidth_section),
+.et-db #et-boc .et-l .aks-content-section {
+  margin: 0 auto !important;
+  width: calc(-10vw + 100%);
+  max-width: none;
+  float: none;
+}
+.container-fixed:not(#content),
+.et-db .aks-content-container,
+.et-db #et-boc .et-l .aks-content-container,
+body.aks-layout-sidebar.page-template-homepage-page #content.container-fixed {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page-template-splash-page .et_pb_section:not(.et_pb_fullwidth_section) {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: calc(-10vw + 100%);
+  max-width: none;
+  float: none;
+}
+.et-db #et-boc .aks-full-width {
+  max-width: 100% !important;
+}
+.container-fixed:not(#content) #et-boc .et-l .aks-full-width,
+.page-template-splash-page #et-boc .et-l .et_pb_section:not(.et_pb_fullwidth_section) .aks-full-width,
+.page-template-homepage-page .container-fixed #et-boc .et-l .aks-full-width,
+.page-template-homepage-page-2 .container-fixed #et-boc .et-l .aks-full-width {
+  margin-left: -5vw;
+  margin-right: -5vw;
+  max-width: 100vw !important;
+}
+/* --- greater than 1560 --- */
+
+@media screen and (min-width: 1560px) {
+    .container-fixed:not(#content) #et-boc .et-l .aks-full-width {
+	/*.page-template-splash-page #et-boc .et-l .et_pb_section:not(.et_pb_fullwidth_section) .aks-full-width,
+	.page-template-homepage-page .container-fixed #et-boc .et-l .aks-full-width,
+	.page-template-homepage-page-2 .container-fixed #et-boc .et-l .aks-full-width */
+		margin-left: calc(-50vw + 708px);
+		margin-right: calc(-50vw + 708px);
+	}
+}
+*/
