@@ -31,6 +31,8 @@ RED TRIANGLE HEADINGS
 	max-width: none;
 	margin-left: 5vw;
 	margin-right: 5vw;
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
 }
 #pageHeader::before,
 .et-db #et-boc .et-l #pageHeader::before {
@@ -57,6 +59,21 @@ RED TRIANGLE HEADINGS
 	right: 0;
 	opacity: .6;
 }
+/* --- less than 767 --- */
+@media screen and (max-width: 767px) {
+	#pageHeader h1,
+	.et-db #et-boc .et-l #pageHeader h1 {
+		padding: 0;
+		font-size: 4.5rem;
+		font-weight: bold;
+	}
+	#pageHeader,
+	#pageHeader.wou-menu-visible,
+	#et-boc .et-l div #pageHeader {
+		margin-bottom: 17.75vw;
+	}
+}
+/* --- greater than 1560 --- */
 @media screen and (min-width: 1560px) {
 	#pageHeader h1,
 	.et-db #et-boc .et-l #pageHeader h1 {
