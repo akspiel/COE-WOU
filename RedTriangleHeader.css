@@ -1,6 +1,18 @@
-/* HEADINGS */
-/* #pageHeader,
-#pageHeader.wou-menu-visible, */
+/* 
+RED TRIANGLE HEADINGS
+-- See an example of Red Triangle Header here: https://wou.edu/teachered/early-childhood/
+-- To add the red triangle header:
+	1) Add the code below to the master stylesheet. If you only want the red triangle header to apply to elements within Divi Builder, you can remove the selectors that are just "#pageHeader..."
+	2) Go to your page and add the "Full Width Header" Divi module.
+	3) Add the title you want as an H1 element.
+	4) Go to Advanced -> CSS IDs & Classes -> in the ID field, enter pageHeader.
+	5) Save.
+-- 
+
+*/
+
+#pageHeader,
+#pageHeader.wou-menu-visible, 
 #et-boc .et-l div #pageHeader {
 	padding: 6vh 0 6vh 0 !important;
 	background-color: #be0a29;
@@ -8,7 +20,7 @@
 	overflow: hidden;
 	margin-bottom: 5vw;
 }
-/* #pageHeader h1, */
+#pageHeader h1,
 .et-db #et-boc .et-l #pageHeader h1 {
 	padding: 0;
 	padding-right: 18%;
@@ -22,7 +34,7 @@
 	margin-left: 5vw;
 	margin-right: 5vw;
 }
-/* #pageHeader::before, */
+#pageHeader::before,
 .et-db #et-boc .et-l #pageHeader::before {
 	content: "";
 	position: absolute;
@@ -34,7 +46,7 @@
 	top: 0;
 	right: 0;
 }
-/* #pageHeader::after, */
+#pageHeader::after,
 .et-db #et-boc .et-l #pageHeader::after {
 	content: "";
 	position: absolute;
@@ -48,7 +60,7 @@
 	opacity: .6;
 }
 @media screen and (min-width: 1560px) {
-	/* #pageHeader h1, */
+	#pageHeader h1,
 	.et-db #et-boc .et-l #pageHeader h1 {
 		margin-left: auto;
 		margin-right: auto;
