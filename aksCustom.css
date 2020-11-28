@@ -1,4 +1,4 @@
-/* linked on COE, DEL, DSPS HEXS, AI sites as of 8/11/20 */
+/* linked on COE, DEL, DSPS HEXS, QLoop, AI sites as of 8/11/20 */
 /*************************
      Display Classes
 *************************/
@@ -79,6 +79,18 @@
 		padding: 0 !important;
 		top: 0 !important;
 	}
+  	ul.ubermenu-submenu {
+    	background-color: #fff;
+    	top: 0 !important;
+    	opacity: 1;
+    }
+   .ubermenu .ubermenu-submenu-type-stack>.ubermenu-item-normal>.ubermenu-target {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .ubermenu-responsive {
+    	max-height: none;
+    }
 	.ubermenu .ubermenu-submenu .ubermenu-column-auto {
 		width: 100% !important;
 	}
@@ -459,18 +471,34 @@ a.et_pb_lightbox_image:focus {
 	line-height: 1.7;
 	color: inherit;
 }
+@media screen and (max-width: 767px) {
+  .et-db #et-boc .et_pb_module p,
+  .et-db #et-boc .et_pb_module ul,
+  .et-db #et-boc .et_pb_module ol,
+  #mainContent p,
+  #mainContent ul,
+  #mainContent ol {
+    line-height: 1.5;
+  }
+}
 /* LISTS */
-.et-db #et-boc .et-l .et_pb_text ul,
-.et-db #et-boc .et-l .et_pb_text ol {
+.et-db #et-boc .et-l .et_pb_module:not(.et_pb_menu) ul:not(.et_pb_tabs_controls):not(.et-menu),
+.et-db #et-boc .et-l .et_pb_module:not(.et_pb_menu) ol:not(.et_pb_tabs_controls):not(.et-menu) {
 	padding-bottom: 0;
 	margin-top: 1em;
-	margin-bottom: 1em;
+	margin-bottom: 0;
+    margin-left: 2.5em;
 }
-.et-db #et-boc .et-l .et_pb_text p:not(:last-of-type) + ul,
-.et-db #et-boc .et-l .et_pb_text p:not(:last-of-type) + ol {
+.et-db #et-boc .et-l .et_pb_module:not(.et_pb_menu) p:not(:last-of-type) + ul,
+.et-db #et-boc .et-l .et_pb_module:not(.et_pb_menu) p:not(:last-of-type) + ol {
 	margin-top: 0;
 }
-.et-db #et-boc .et-l .et_pb_text li:not(:last-child) {
+.et-db #et-boc .et-l .et_pb_module:not(.et_pb_menu) ul:not(:last-child),
+.et-db #et-boc .et-l .et_pb_module:not(.et_pb_menu) ol:not(:last-child) {
+	padding-bottom: 1em;
+}
+.et-db #et-boc .et-l .et_pb_module:not(.et_pb_menu) ul:not(.et_pb_social_media_follow):not(.aks-short-list):not(.et_pb_tabs_controls) li:not(:last-child),
+.et-db #et-boc .et-l .et_pb_module:not(.et_pb_menu) ol:not(.aks-short-list) li:not(:last-child) {
 	margin-bottom: 5px;
 }
 .et-db #et-boc .et-l .et_pb_module > li {
@@ -484,6 +512,12 @@ a.et_pb_lightbox_image:focus {
 	margin-top: 0;
 	margin-bottom: 0;
 }
+@media screen and (max-width: 767px) {
+	.et-db #et-boc .et-l .et_pb_module:not(.et_pb_menu) ul:not(.et_pb_tabs_controls),
+	.et-db #et-boc .et-l .et_pb_module:not(.et_pb_menu) ol:not(.et_pb_tabs_controls) {
+  		margin-left: 1.2em;
+	}
+}
 /* LINKS */
 .et-db #et-boc .et_pb_module.et_pb_text:not(.aks-banner-people):not(.aks-story-cat-mod) a,
 .et-db #et-boc .et_pb_module.et_pb_toggle .et_pb_toggle_content:not(.aks-banner-people) a,
@@ -493,7 +527,10 @@ a.et_pb_lightbox_image:focus {
 	padding-bottom: 0 !important;
 }
 .et-db #et-boc .et_pb_module a.icon,
-.et-db #et-boc .entry-title a {
+.et-db #et-boc .entry-title a,
+.et-db #et-boc a.et_pb_video_play,
+.et-db #et-boc a.et-pb-arrow-prev,
+.et-db #et-boc a.et-pb-arrow-next {
   text-decoration: none !important;
 }
 .et-db #et-boc .et_pb_module.et_pb_text a:hover,
@@ -513,7 +550,7 @@ a.et_pb_lightbox_image:focus {
 /* adding back the outline on focus */
 :focus {
 	outline: -webkit-focus-ring-color auto 1px !important;
-	outline-offset: 0 !important;
+	outline-offset: 1px !important;
 }
 /* HEADINGS */
 #pageHeader,
@@ -923,7 +960,6 @@ a.et_pb_lightbox_image:focus {
 .et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_team_member .et_pb_team_member_description p.et_pb_member_position {
 	font-style: italic;
 	padding-bottom: 1em;
-    line-height: 1.5;
 	font-size: 1.6rem;
 }
 /* --- greater than 1560 --- */
@@ -1058,6 +1094,7 @@ a.et_pb_lightbox_image:focus {
 .et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_menu ul.et-menu li li,
 .et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_menu ul.et-menu li li a {
 	width: 100% !important;
+    line-height: 1.25;
 }
 .et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_menu nav.et-menu-nav,
 .et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_menu ul.et-menu > li {
@@ -1078,6 +1115,7 @@ a.et_pb_lightbox_image:focus {
 .et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_menu ul.et-menu > li > a {
 	text-transform: uppercase!important;
 	font-weight: bold!important;
+    line-height: 1.2;
 }
 .et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_menu ul.et-menu li.menu-item {
 	-webkit-box-orient: vertical;
@@ -1436,21 +1474,32 @@ a.et_pb_lightbox_image:focus {
 	font-size: 3rem;
 }
 /* removing spacing on first */
-.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_text ul:first-child,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_text > ul:first-child,
 .et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_toggle .et_pb_toggle_content ul:first-child,
 .et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_text h2:first-of-type,
 .et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_text h3:first-child,
 .et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_text h4:first-child,
 .et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_blurb .et_pb_blurb_description h3:first-child,
 .et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module .et_pb_module_header,
-.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_text ul:first-child,
-.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_toggle .et_pb_toggle_content ul:first-child,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_text > ul:first-child,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_toggle .et_pb_toggle_content > ul:first-child,
 .et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_text h2:first-of-type,
 .et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_text h3:first-child,
 .et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_text h4:first-child,
 .et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_blurb .et_pb_blurb_description h3:first-child,
 .et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module .et_pb_module_header {
 	margin-top: 0 !important;
+}
+/* sub lists */
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_text ul:not(.aks-short-list) li ul,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_text ul:not(.aks-short-list) li ul,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_text ol:not(.aks-short-list) li ol,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_text ol:not(.aks-short-list) li ol,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_text ul:not(.aks-short-list) li ol,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_text ul:not(.aks-short-list) li ol,
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_text ol:not(.aks-short-list) li ul,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_text ol:not(.aks-short-list) li ul {
+margin-top: 5px !important;
 }
 /* if the h3 is after an image divider */
 .et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_divider_hidden + .et_pb_module.et_pb_text h3:first-child,
@@ -1531,6 +1580,13 @@ a.et_pb_lightbox_image:focus {
 	}
 }
 /*************************
+    DIVI TEAM in Amy's designs
+*************************/
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_team_member .et_pb_team_member_description p.et_pb_member_position,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_team_member .et_pb_team_member_description p.et_pb_member_position {
+    line-height: 1.5;
+}
+/*************************
     DIVI CTA aka PROMO in Amy's designs
 *************************/
 .et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_promo p span.aks-sub-note,
@@ -1587,22 +1643,46 @@ a.et_pb_lightbox_image:focus {
     DIVI TOGGLE in Amy's designs
 *************************/
 /* the first few are global */
+.et-db #et-boc .et-l .et_pb_section .et_pb_module.et_pb_toggle .et_pb_toggle_title {
+	margin: 0 !important;
+}
 .et-db #et-boc .et-l .et_pb_section .et_pb_module.et_pb_toggle {
     padding: 0;
 }
-.et-db #et-boc .et_pb_section .et_pb_module.et_pb_toggle .et_pb_toggle_content {
+.et-db #et-boc .et_pb_section .et_pb_module.et_pb_toggle:not(.aks-faq) .et_pb_toggle_content {
     padding: 25px 30px 25px 30px;
 }
-.et-db #et-boc .et-l .et_pb_section .et_pb_module.et_pb_toggle .et_pb_toggle_title {
-	margin: 0 !important;
+.et-db #et-boc .et-l .et_pb_section .et_pb_module.et_pb_toggle:not(.aks-faq) .et_pb_toggle_title {
 	padding: 30px 80px 30px 30px;
 }
-.et-db #et-boc .et-l .et_pb_toggle .et_pb_toggle_title:before {
+.et-db #et-boc .et-l .et_pb_toggle:not(.aks-faq) .et_pb_toggle_title:before {
     right: 30px;
 }
+/* the faq style */
+.et-db #et-boc .et-l .et_pb_section .aks-faq.et_pb_module.et_pb_toggle .et_pb_toggle_title {
+  padding: 30px 30px 30px 40px;
+  font-size: 2rem !important;
+}
+.et-db #et-boc .et_pb_section .aks-faq.et_pb_module.et_pb_toggle .et_pb_toggle_content {
+  padding: 25px 40px 30px 40px;
+}
+.et-db #et-boc .et-l .et_pb_section .aks-faq.et_pb_module.et_pb_toggle .et_pb_toggle_title:hover,
+.et-db #et-boc .et-l .et_pb_section .aks-faq.et_pb_module.et_pb_toggle .et_pb_toggle_title:focus, 
+.et-db #et-boc .et-l .et_pb_section .aks-faq.et_pb_module.et_pb_toggle .et_pb_toggle_title:active,
+.et-db #et-boc .et-l .et_pb_section .aks-faq.et_pb_module.et_pb_toggle.et_pb_toggle_open .et_pb_toggle_title {
+  background-color: #fafafa !important;
+}
+.et-db #et-boc .et-l .aks-faq.et_pb_module.et_pb_toggle .et_pb_toggle_title::before {
+  top: 26px;
+  left: 3px;
+  right: auto !important;
+  color: #666;
+  margin: 0;
+}
+/* in amy designs but not global */
 .et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_toggle .et_pb_toggle_title,
 .et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_toggle .et_pb_toggle_title {
-	font-weight: 400 !important;
+	font-weight: 400;
 }
 .et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_toggle.et_pb_toggle_open .et_pb_toggle_title,
 .et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_toggle.et_pb_toggle_open .et_pb_toggle_title {
@@ -1652,6 +1732,8 @@ a.et_pb_lightbox_image:focus {
 	-ms-flex-pack: center;
 	justify-content: center;
 	align-items: stretch;
+	margin-left: -1px;
+	margin-right: -1px;
 }
 .et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_tabs ul.et_pb_tabs_controls li,
 .et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_tabs ul.et_pb_tabs_controls li {
@@ -1659,23 +1741,17 @@ a.et_pb_lightbox_image:focus {
 	-ms-flex: 1;    
 	flex: 1;
 	border-top: 1px solid #d9d9d9;
+    border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
 	height: auto !important;
 	display: block;
 	transition: all .2s;
-}
-.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_tabs ul.et_pb_tabs_controls li::before,
-.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_tabs ul.et_pb_tabs_controls li::before {
-	content: "";
-	position: absolute;
-	left: -1px;
-	top: 0px;
-	bottom: 0;
-	width: 1px;
-	background-color: #d9d9d9;
+	margin-right: -1px;
 }
 .et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_tabs ul.et_pb_tabs_controls li:last-child,
 .et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_tabs ul.et_pb_tabs_controls li:last-child {
-	border-right: none;
+	border-right: 1px solid #d9d9d9;
+	margin-right: 0;
 }
 .et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_tabs ul.et_pb_tabs_controls li a,
 .et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_tabs ul.et_pb_tabs_controls li a {
@@ -1715,10 +1791,6 @@ a.et_pb_lightbox_image:focus {
 .et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_tabs ul.et_pb_tabs_controls li.et_pb_tab_active {
 	margin-top: -10px;
 	border-top: 5px solid #db0a29;
-}
-.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_tabs ul.et_pb_tabs_controls li.et_pb_tab_active::before,
-.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_tabs ul.et_pb_tabs_controls li.et_pb_tab_active::before {
-	top: -5px;
 }
 .et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_tabs ul.et_pb_tabs_controls li.et_pb_tab_active a,
 .et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_tabs ul.et_pb_tabs_controls li.et_pb_tab_active a {
@@ -1775,6 +1847,11 @@ a.et_pb_lightbox_image:focus {
 .et-db:not(.home) #et-boc .et-l .et_pb_section.aks-section .et_pb_column_1_4 .et_pb_module.et_pb_button_module_wrapper a.et_pb_button,
 .et-db:not(.home) #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_column_1_4 .et_pb_module.et_pb_button_module_wrapper a.et_pb_button {
 	width: 100%; 
+}
+/* tried to do this in divi, said it was 0 in module settings, but was still showing as 3px on frontend */
+.et-db #et-boc .et-l .et_pb_section.aks-section .et_pb_module.et_pb_button_module_wrapper a.et_pb_button,
+.et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section .et_pb_module.et_pb_button_module_wrapper a.et_pb_button {
+	border-radius: 0;
 }
 /*************************
      GLOBAL CONTENT WIDTHS
@@ -1898,7 +1975,111 @@ body.aks-layout-sidebar.page-template-homepage-page #content.container-fixed,
      Print
 *************************/
 @media print {
-  #fixedfooter, .aks-coe-footer {
+  #fixedfooter,
+  #globalFooter,
+  .aks-coe-footer,
+  .et-db #et-boc .et-l .et_pb_section.aks-sidebar .et_pb_module.et_pb_social_media_follow {
     display: none;
+  }
+  body.aks-layout-sidebar .et_builder_inner_content {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  }
+  .et-db #et-boc .et-l .et_pb_section.aks-sidebar {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    width: 100%;
+    margin-right: 0;
+  }
+  .et-db #et-boc .et-l .et_pb_toggle_content {
+    display: block
+  }
+  .et-db #et-boc .et-l .et_pb_section.aks-sidebar ~ .et_pb_section {
+    width: 100% !important;
+    margin-right: 0 !important;
+    float: none !important;
+  }
+#pageHeader h1, .et-db #et-boc .et-l #pageHeader h1,  
+#globalHeader #topRow, .page-template-homepage-page .container-fixed, .page-template-homepage-page-2 .container-fixed, .project-template-default .et_pb_section:not(.et_pb_fullwidth_section), .container-fixed:not(#content), .et-db .aks-content-container, .et-db #et-boc .et-l .aks-content-container, .et-db #et-boc .et-l .et_pb_with_background .et_pb_row.aks-content-container, body.aks-layout-sidebar.page-template-homepage-page #content.container-fixed, .et-db.page-template-splash-page #et-boc .et_pb_section:not(.et_pb_fullwidth_section):not(.aks-ctt-head) .et_pb_row, .et-db.page-template-splash-page #et-boc .et_pb_section.aks-section ~ .et_pb_section.et_pb_with_background:not(.et_pb_fullwidth_section):not(.aks-ctt-head) .et_pb_row {
+  margin-left: 50pt;
+  margin-right: 50pt;
+}
+.et-db #et-boc .et-l .et_pb_section.aks-sidebar ~ #overview.et_pb_section.et_pb_with_background {
+  width: calc(100% + 100pt) !important;
+  margin-right: -50pt !important;
+	margin-left: -50pt !important;
+	padding-left: 50pt !important;
+  padding-right: 50pt !important;
+}
+  #pageHeader h1 {
+    padding-right: 0;
+  }
+  #pageHeader::before,
+  #pageHeader::after {
+    display: none;
+  }
+  #pageHeader, #pageHeader.wou-menu-visible, #et-boc .et-l div #pageHeader {
+  padding: 36pt 0 36pt 0 !important;
+      margin-bottom: 0;
+  }
+  #intHeader h1 {
+    margin: 0;
+    padding: 0 50pt;
+    text-align: left;
+  }
+  #intHeader {
+    min-height: 20px;
+  }
+  .et-db #et-boc .et-l .et_pb_toggle_content {
+	display: block !important;
+  }
+  .et_animated[data-animation-style=slideLeft],
+  .et_animated[data-animation-style=foldLeft]{
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+  }
+  a.icon::after {
+    display: none;
+  }
+  .et-db #et-boc .et-l .et_pb_section .aks-faq.et_pb_module.et_pb_toggle .et_pb_toggle_title {
+  	padding-bottom: 20px;
+  	font-weight: 600 !important;
+  }
+  .et-db #et-boc .et_pb_section .aks-faq.et_pb_module.et_pb_toggle .et_pb_toggle_content {
+    padding-top: 0;
+  }
+  .et-db #et-boc .et_pb_module p, .et-db #et-boc .et_pb_module ul, .et-db #et-boc .et_pb_module ol, #mainContent p, #mainContent ul, #mainContent ol {
+    line-height: 1.5;
+  }
+   #pageHeader h1 {
+    font-size: 26pt;
+   }
+   #intHeader h1 {
+    font-size: 18pt;
+  }
+  .et-db #et-boc .et_pb_module {
+    font-size: 10.5pt;
+  }
+  .et-db #et-boc .et_pb_module:not(.et_pb_posts):not(.et_pb_blog_grid_wrapper) h2,
+  .et-db #et-boc .et-l .et_pb_module:not(.et_pb_posts):not(.et_pb_blog_grid_wrapper) h2 {
+      font-size: 20pt;
+  }
+  .et-db #et-boc .et_pb_module h3,
+  .et-db #et-boc .et-l .et_pb_module h3 {
+      font-size: 15pt;
+  }
+  .et-db #et-boc .et_pb_module h4,
+  .et-db #et-boc .et-l .et_pb_module h4 {
+      font-size: 14pt;
+  }
+  .et-db #et-boc .et-l .et_pb_section.aks-section,
+  .et-db #et-boc .et-l .et_pb_section.aks-section ~ .et_pb_section {
+    margin-bottom: 36pt;
   }
 }
